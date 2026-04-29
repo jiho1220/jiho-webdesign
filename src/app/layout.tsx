@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import 'pretendard/dist/web/static/pretendard-dynamic-subset.css'
 import CustomCursor from '@/components/CustomCursor'
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
   description: '박지호 UX/UI 디자이너 포트폴리오',
 }
 
+const GA_ID = 'G-DS5HM1TDYC'
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +35,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${inter.variable} ${jetbrainsMono.variable}`} style={{ background: 'var(--void)' }}>
+      <head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="ga-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+        `}</Script>
+      </head>
       <body style={{ background: 'var(--void)', color: 'var(--text)', minHeight: '100vh' }}>
         <CustomCursor />
         <div className="noise-overlay" aria-hidden />
