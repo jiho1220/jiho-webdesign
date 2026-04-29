@@ -85,11 +85,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </div>
       </div>
 
-      {/* 히어로 썸네일 — 전체 너비 */}
+      {/* 히어로 썸네일 */}
+      <div style={{ padding: '0 clamp(1rem, 6vw, 8rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
       <div style={{
         position: 'relative', width: '100%', aspectRatio: '16/9',
         background: 'var(--bg-card)',
-        marginBottom: '20px',
       }}>
         <Image
           src={project.thumbnail}
@@ -98,6 +98,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           style={{ objectFit: 'cover' }}
           priority
         />
+      </div>
       </div>
 
       {/* 이미지 없을 때 하단 버튼 */}
