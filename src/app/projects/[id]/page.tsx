@@ -112,7 +112,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       {/* 추가 이미지 — 전체 너비 */}
       {project.images && project.images.length > 0 && (
         <>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', background: 'var(--void)', padding: '0 4rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(12px, 2vw, 24px)', background: 'var(--void)', padding: '0 clamp(1rem, 6vw, 8rem)' }}>
             {project.images.map((src, i) => (
               <div key={i} style={{ position: 'relative', width: '100%', background: 'var(--bg-card)' }}>
                 <Image src={src} alt={`${project.title} — ${i + 1}`} width={1920} height={1080} style={{ width: '100%', height: 'auto', display: 'block' }} />
