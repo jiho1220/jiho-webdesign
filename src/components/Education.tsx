@@ -29,7 +29,6 @@ export default function Education() {
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-faint)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
               <p style={{ fontSize: 16, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{e.institution}</p>
               <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>{e.major}</p>
-              {e.gpa && <p style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: 'var(--accent)', marginTop: 8 }}>GPA {e.gpa}</p>}
             </div>
           ))}
 
