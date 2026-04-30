@@ -54,6 +54,7 @@ export const PROJECTS: ProjectItem[] = [
       '/projects/01/3.png',
       '/projects/01/4.png',
       '/projects/01/5.png',
+      '/projects/01/5-2.png',
       '/projects/01/6.png',
       '/projects/01/7.png',
       '/projects/01/8.png',
