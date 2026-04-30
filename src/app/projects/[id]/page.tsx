@@ -101,7 +101,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             <div>
               {project.videoTitle && (
                 <h2 style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', fontWeight: 600, letterSpacing: '-0.02em', color: 'var(--text)', marginBottom: '1.5rem' }}>
-                  {project.videoTitle}
+                  {project.videoTitle.startsWith('[') && project.videoTitle.includes(']') ? (
+                    <>
+                      <span style={{ color: 'var(--accent)' }}>{project.videoTitle.slice(0, project.videoTitle.indexOf(']') + 1)}</span>
+                      {project.videoTitle.slice(project.videoTitle.indexOf(']') + 1)}
+                    </>
+                  ) : project.videoTitle}
                 </h2>
               )}
               {project.videoDescription && (
