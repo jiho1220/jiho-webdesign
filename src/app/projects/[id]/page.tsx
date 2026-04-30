@@ -88,11 +88,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       {/* Vimeo 영상 + 설명 */}
       {project.video && (
         <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
-          {project.videoTitle && (
-            <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', fontWeight: 700, letterSpacing: '-0.03em', color: 'var(--text)', marginBottom: '1.25rem' }}>
-              {project.videoTitle}
-            </h2>
-          )}
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
               <iframe
@@ -103,11 +98,18 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 title={project.title}
               />
             </div>
-            {project.overview && (
-              <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
-                {project.overview}
-              </p>
-            )}
+            <div>
+              {project.videoTitle && (
+                <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', fontWeight: 700, letterSpacing: '-0.03em', color: 'var(--text)', marginBottom: '0.75rem' }}>
+                  {project.videoTitle}
+                </h2>
+              )}
+              {project.overview && (
+                <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
+                  {project.overview}
+                </p>
+              )}
+            </div>
           </div>
         </div>
       )}
