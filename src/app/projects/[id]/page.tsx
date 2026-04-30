@@ -161,7 +161,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(12px, 2vw, 24px)', background: 'var(--void)', padding: '0 clamp(1.25rem, 5vw, 6rem)' }}>
             {project.images.map((src, i) => (
               <div key={i} style={{ position: 'relative', width: '100%', background: 'var(--bg-card)' }}>
-                <Image src={src} alt={`${project.title} — ${i + 1}`} width={1920} height={1080} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                {src.endsWith('.mp4') || src.endsWith('.webm') ? (
+                  <video autoPlay loop muted playsInline style={{ width: '100%', height: 'auto', display: 'block' }}>
+                    <source src={src} type={src.endsWith('.mp4') ? 'video/mp4' : 'video/webm'} />
+                  </video>
+                ) : (
+                  <Image src={src} alt={`${project.title} — ${i + 1}`} width={1920} height={1080} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                )}
               </div>
             ))}
           </div>
