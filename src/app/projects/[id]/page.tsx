@@ -88,7 +88,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       {/* Vimeo 영상 + 설명 */}
       {project.video && (
         <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
-          <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start' }}>
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
               <iframe
                 src={`${project.video}?badge=0&autopause=0&player_id=0&app_id=58479`}
