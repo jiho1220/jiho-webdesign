@@ -85,6 +85,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </div>
       </div>
 
+      {/* Vimeo 영상 */}
+      {project.video && (
+        <div style={{ padding: '0 clamp(1rem, 6vw, 8rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
+          <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
+            <iframe
+              src={`${project.video}?badge=0&autopause=0&player_id=0&app_id=58479`}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
+              title={project.title}
+            />
+          </div>
+        </div>
+      )}
+
       {/* 히어로 썸네일 */}
       <div style={{ padding: '0 clamp(1rem, 6vw, 8rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
       <div style={{

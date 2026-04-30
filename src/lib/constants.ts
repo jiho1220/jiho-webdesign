@@ -23,6 +23,8 @@ export type ProjectItem = {
   meta?: { label: string; value: string }[]
   /** 상세 페이지에 표시할 추가 이미지들 (`public` 기준 경로) */
   images?: string[]
+  /** Vimeo 영상 URL (embed용) */
+  video?: string
 }
 
 export const PROJECTS: ProjectItem[] = [
@@ -39,6 +41,7 @@ export const PROJECTS: ProjectItem[] = [
       { label: 'Period', value: '2025.07 — 2025.09' },
       { label: 'Team', value: 'UXUI 디자이너 2, 프론트엔드 개발자 1, 백엔드 개발자 1' },
     ],
+    video: 'https://player.vimeo.com/video/1116024293',
     images: [
       '/projects/01/1.png',
       '/projects/01/2.png',
