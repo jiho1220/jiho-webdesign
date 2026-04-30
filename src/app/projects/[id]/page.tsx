@@ -105,9 +105,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                 </h2>
               )}
               {project.videoDescription && (
-                <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
-                  {project.videoDescription}
-                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {project.videoDescription.split('\n\n').map((para, i) => {
+                    const colonIdx = para.indexOf(': ')
+                    if (colonIdx !== -1) {
+                      return (
+                        <p key={i} style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75 }}>
+                          <strong style={{ color: 'var(--text)', fontWeight: 600 }}>{para.slice(0, colonIdx + 1)}</strong>
+                          {para.slice(colonIdx + 1)}
+                        </p>
+                      )
+                    }
+                    return <p key={i} style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75 }}>{para}</p>
+                  })}
+                </div>
               )}
             </div>
           </div>
