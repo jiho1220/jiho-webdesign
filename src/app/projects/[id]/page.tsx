@@ -104,9 +104,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
                   {project.videoTitle}
                 </h2>
               )}
-              {project.overview && (
-                <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
-                  {project.overview}
+              {project.videoDescription && (
+                <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75 }}>
+                  {project.videoDescription}
                 </p>
               )}
             </div>
