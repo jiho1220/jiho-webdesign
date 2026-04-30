@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       </div>
 
       {/* 헤더 */}
-      <div style={{ padding: '4rem 4rem 3rem 4rem' }}>
+      <div style={{ padding: 'clamp(1.25rem, 5vw, 6rem) clamp(1.25rem, 5vw, 6rem) 3rem clamp(1.25rem, 5vw, 6rem)' }}>
         <div style={{
           display: 'grid',
           gridTemplateColumns: '1fr auto',
@@ -85,10 +85,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
         </div>
       </div>
 
-      {/* Vimeo 영상 */}
+      {/* Vimeo 영상 + 설명 */}
       {project.video && (
-        <div style={{ padding: '0 clamp(1rem, 6vw, 8rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
-          <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
+        <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)', display: 'flex', gap: '2rem', alignItems: 'center' }}>
+          <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
             <iframe
               src={`${project.video}?badge=0&autopause=0&player_id=0&app_id=58479`}
               allow="autoplay; fullscreen; picture-in-picture"
@@ -97,11 +97,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
               title={project.title}
             />
           </div>
+          {project.overview && (
+            <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
+              {project.overview}
+            </p>
+          )}
         </div>
       )}
 
       {/* 히어로 썸네일 */}
-      <div style={{ padding: '0 clamp(1rem, 6vw, 8rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
+      <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
       <div style={{
         position: 'relative', width: '100%', aspectRatio: '16/9',
         background: 'var(--bg-card)',
@@ -118,7 +123,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
       {/* 이미지 없을 때 하단 버튼 */}
       {(!project.images || project.images.length === 0) && (
-        <div style={{ maxWidth: 1080, margin: '0 auto', padding: '4rem var(--gutter) 0' }}>
+        <div style={{ maxWidth: 1080, margin: '0 auto', padding: 'clamp(1.25rem, 5vw, 6rem) var(--gutter) 0' }}>
           <div style={{ paddingTop: '2rem', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'center' }}>
             <Link href="/#projects" className="btn-outline">← Projects</Link>
           </div>
@@ -128,7 +133,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       {/* 추가 이미지 — 전체 너비 */}
       {project.images && project.images.length > 0 && (
         <>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(12px, 2vw, 24px)', background: 'var(--void)', padding: '0 clamp(1rem, 6vw, 8rem)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(12px, 2vw, 24px)', background: 'var(--void)', padding: '0 clamp(1.25rem, 5vw, 6rem)' }}>
             {project.images.map((src, i) => (
               <div key={i} style={{ position: 'relative', width: '100%', background: 'var(--bg-card)' }}>
                 <Image src={src} alt={`${project.title} — ${i + 1}`} width={1920} height={1080} style={{ width: '100%', height: 'auto', display: 'block' }} />
