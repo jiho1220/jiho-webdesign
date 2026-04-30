@@ -89,9 +89,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
       {project.video && (
         <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
           {project.videoTitle && (
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', fontWeight: 700, letterSpacing: '-0.03em', color: 'var(--text)', marginBottom: '1.25rem' }}>
               {project.videoTitle}
-            </p>
+            </h2>
           )}
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
