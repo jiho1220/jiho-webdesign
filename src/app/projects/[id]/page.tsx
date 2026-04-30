@@ -100,7 +100,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             </div>
             <div>
               {project.videoTitle && (
-                <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', fontWeight: 700, letterSpacing: '-0.03em', color: 'var(--text)', marginBottom: '0.75rem' }}>
+                <h2 style={{ fontSize: 'clamp(1rem, 1.5vw, 1.25rem)', fontWeight: 600, letterSpacing: '-0.02em', color: 'var(--text)', marginBottom: '0.75rem' }}>
                   {project.videoTitle}
                 </h2>
               )}
