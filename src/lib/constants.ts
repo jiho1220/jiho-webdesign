@@ -47,7 +47,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     video: 'https://player.vimeo.com/video/1116024293',
     videoTitle: '헤이브로 사용자 여정 영상',
-    videoDescription: '실제 사용자 시나리오를 바탕으로 온보딩부터 루틴 완료까지의 과정을 프로토타입으로 구현해 헤이브로 앱의 핵심 루틴 여정을 담았습니다.',
+    videoDescription: '실제 사용자 시나리오를 바탕으로 온보딩부터 루틴 완료까지의 과정을 프로토타입으로 구현해\n헤이브로 앱의 핵심 루틴 여정을 담았습니다.',
     images: [
       '/projects/01/1.png',
       '/projects/01/2.png',
