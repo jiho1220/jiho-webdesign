@@ -46,7 +46,7 @@ export const PROJECTS: ProjectItem[] = [
       { label: 'Team', value: 'UXUI 디자이너 2, 프론트엔드 개발자 1, 백엔드 개발자 1' },
     ],
     video: 'https://player.vimeo.com/video/1116024293',
-    videoTitle: '헤이브로 사용자 여정 영상',
+    videoTitle: '[사용자 여정 시연 영상] 프로토타입 시연의 한계를 깬 스토리텔링 전략',
     videoDescription: '기획 의도: 지루한 프로토타입 시연 대신, 2030 남성에게 가장 친숙하고 폭발력 있는 \'유튜버 직접 체험\' 포맷 차용\n\n핵심 전략: 앱 온보딩부터 루틴 완료까지의 사용자 여정을 실제 신체 변화와 교차 편집\n\n기대 효과: 단순한 앱 기능(What) 소개가 아닌, 루틴 실천 후의 확실한 변화(Why)를 보여주어 타겟의 즉각적인 몰입 유도',
     images: [
       '/projects/01/1.png',
