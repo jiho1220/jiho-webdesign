@@ -39,7 +39,7 @@ export const PROJECTS: ProjectItem[] = [
     year: '2025',
     thumbnail: '/projects/01/thumb.png',
     description: '팀 프로젝트',
-    overview: '스킨케어 브랜드 헤이브로의 타겟 확장을 위해 제안한 남성 올인원 자기관리 루틴 앱으로,\n사용자 경험 중심의 논리적인 서비스 설계와 프로토타이핑을 주도하여\n해커톤 디자인 혁신상을 수상했습니다.',
+    overview: '스킨케어 브랜드 헤이브로의 타겟 확장을 위해 제안한 남성 올인원 자기관리 루틴 앱으로,\n사용자 경험 중심의 논리적인 서비스 설계와 프로토타이핑을 주도하여\n신한 스퀘어브릿지 청년 해커톤 1기에서 디자인 부문 우승을 차지하여 디자인 혁신상(대상)을 수상했습니다.',
     meta: [
       { label: 'Role', value: 'UX/UI Designer' },
       { label: 'Period', value: '2025.07 — 2025.09' },
