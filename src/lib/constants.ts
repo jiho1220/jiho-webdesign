@@ -25,6 +25,8 @@ export type ProjectItem = {
   images?: string[]
   /** Vimeo 영상 URL (embed용) */
   video?: string
+  /** 영상 섹션 제목 */
+  videoTitle?: string
 }
 
 export const PROJECTS: ProjectItem[] = [
@@ -42,6 +44,7 @@ export const PROJECTS: ProjectItem[] = [
       { label: 'Team', value: 'UXUI 디자이너 2, 프론트엔드 개발자 1, 백엔드 개발자 1' },
     ],
     video: 'https://player.vimeo.com/video/1116024293',
+    videoTitle: '헤이브로 사용자 여정 영상',
     images: [
       '/projects/01/1.png',
       '/projects/01/2.png',

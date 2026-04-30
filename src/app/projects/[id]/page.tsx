@@ -87,21 +87,28 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
 
       {/* Vimeo 영상 + 설명 */}
       {project.video && (
-        <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)', display: 'flex', gap: '2rem', alignItems: 'center' }}>
-          <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
-            <iframe
-              src={`${project.video}?badge=0&autopause=0&player_id=0&app_id=58479`}
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
-              title={project.title}
-            />
-          </div>
-          {project.overview && (
-            <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
-              {project.overview}
+        <div style={{ padding: '0 clamp(1.25rem, 5vw, 6rem)', marginBottom: 'clamp(12px, 2vw, 24px)' }}>
+          {project.videoTitle && (
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: '1rem' }}>
+              {project.videoTitle}
             </p>
           )}
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+            <div style={{ position: 'relative', flexShrink: 0, width: '35%', aspectRatio: '16/9', background: 'var(--bg-card)' }}>
+              <iframe
+                src={`${project.video}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
+                title={project.title}
+              />
+            </div>
+            {project.overview && (
+              <p style={{ fontSize: 16, color: 'var(--text-muted)', lineHeight: 1.75, whiteSpace: 'pre-line' }}>
+                {project.overview}
+              </p>
+            )}
+          </div>
         </div>
       )}
 
