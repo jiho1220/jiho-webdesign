@@ -69,7 +69,7 @@ export default function About() {
         marginBottom: 'clamp(2rem, 4vw, 3rem)',
       }}>
         <div style={{ flex: 1, height: 1, background: 'var(--border)' }} />
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', flexShrink: 0 }}>
+        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 15, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-faint)', flexShrink: 0 }}>
           Background
         </span>
       </div>

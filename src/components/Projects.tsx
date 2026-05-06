@@ -15,7 +15,7 @@ export default function Projects() {
           Projects
         </h2>
         <div style={{ flex: 1, height: 1, background: 'var(--border-strong)' }} />
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--text-faint)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-faint)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
           {PROJECTS.length} works
         </span>
       </div>
