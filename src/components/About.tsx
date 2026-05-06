@@ -37,9 +37,10 @@ export default function About() {
             UX/UI 디자이너 <span style={{ background: 'var(--accent)', color: '#000', padding: '0 0.2em' }}>박지호</span>입니다.
           </p>
 
-          <p style={{ fontSize: 17, lineHeight: 1.85, color: 'var(--text-muted)', maxWidth: 400 }}>
-            사용자의 심리와 행동 패턴을 분석해 목적에 맞는 경험을 설계합니다.
-            직관적인 흐름과 시각적 설득력으로, 타겟이 원하는 행동을 자연스럽게 이끌어냅니다.
+          <p style={{ fontSize: 17, lineHeight: 1.85, color: 'var(--text-muted)', maxWidth: 600 }}>
+            사용자의 심리와 행동 패턴을 분석해 목적에 맞는 경험을 설계합니다.<br />
+            직관적인 흐름과 시각적 설득력으로, 타겟이 원하는 행동을<br />
+            자연스럽게 이끌어냅니다.
           </p>
         </div>
 
@@ -84,7 +85,7 @@ export default function About() {
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 28 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
               <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{e.institution}</p>
-              <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 15, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0 }}>{e.major}</p>
+              <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 15, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0, whiteSpace: 'pre-line' }}>{e.major}</p>
               {i === 0 && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                   {GPA.map((g) => (

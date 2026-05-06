@@ -128,7 +128,7 @@ export const EDUCATION = [
   {
     period: '2019.03 — 2025.02',
     institution: '중앙대학교',
-    major: '시각디자인학과 졸업 · 심리학과 부전공 졸업',
+    major: '시각디자인학과 졸업\n심리학과 부전공 졸업',
   },
   {
     period: '2016.03 — 2019.02',
@@ -164,5 +164,5 @@ export const AWARDS = [
 
 export const CERTIFICATIONS = [
   { date: '2024.06.18', name: '컬러리스트 산업기사', issuer: '한국산업인력공단' },
-  { date: '2024.07.23', name: '운전면허 2종 보통', issuer: '서울특별시경찰청장' },
+  { date: '2024.07.23', name: '자동차 운전면허 2종 보통', issuer: '서울특별시경찰청장' },
 ]
