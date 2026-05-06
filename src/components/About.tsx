@@ -32,14 +32,14 @@ export default function About() {
           </div>
 
           <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.2 }}>
-            사용자에게 공감하며<br />
-            문제를 해결하는<br />
+            사용자의 <span style={{ color: 'magenta' }}>심리를 분석</span>하여<br />
+            <span style={{ color: 'magenta' }}>행동을 설계</span>하는<br />
             UX/UI 디자이너 <span style={{ background: 'var(--accent)', color: '#000', padding: '0 0.2em' }}>박지호</span>입니다.
           </p>
 
           <p style={{ fontSize: 17, lineHeight: 1.85, color: 'var(--text-muted)', maxWidth: 400 }}>
-            사람 중심의 디자인을 지향합니다. UX/UI 설계부터 브랜드 아이덴티티까지,
-            시각적으로 또렷하고 사용하기 쉬운 경험을 만듭니다.
+            사용자의 심리와 행동 패턴을 분석해 목적에 맞는 경험을 설계합니다.
+            직관적인 흐름과 시각적 설득력으로, 타겟이 원하는 행동을 자연스럽게 이끌어냅니다.
           </p>
         </div>
 
