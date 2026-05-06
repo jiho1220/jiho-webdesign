@@ -63,7 +63,7 @@ export default function Hero() {
         }}>
           <span style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: 11,
+            fontSize: 15,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
             color: 'var(--accent)',
@@ -73,7 +73,7 @@ export default function Hero() {
           <span style={{ width: 40, height: 1, background: 'var(--border-strong)', display: 'block' }} />
           <span style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: 11,
+            fontSize: 15,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
             color: 'var(--text-faint)',
@@ -111,8 +111,8 @@ export default function Hero() {
             lineHeight: 1.7,
             maxWidth: 400,
           }}>
-            맥락을 읽고 구조로 옮기고,<br />
-            사용의 순간까지 경험으로 완성합니다.
+            사용자가 왜 그렇게 행동하는지 분석하고,<br />
+            막힘 없이 흐르는 경험을 설계합니다.
           </p>
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>

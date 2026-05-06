@@ -46,7 +46,7 @@ export default function Navbar() {
           color: 'var(--text)',
         }}
       >
-        Park Jiho
+        Jiho Park
       </button>
 
       {/* 링크 */}

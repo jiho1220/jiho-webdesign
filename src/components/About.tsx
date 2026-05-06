@@ -25,7 +25,7 @@ export default function About() {
           }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/profile.jpg"
+              src="/profile2.jpg"
               alt={PERSONAL.nameEn}
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
             />

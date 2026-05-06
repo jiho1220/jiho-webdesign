@@ -1,6 +1,6 @@
 export const PERSONAL = {
   name: '박지호',
-  nameEn: 'Park Jiho',
+  nameEn: 'Jiho Park',
   title: 'UX/UI Designer',
   email: 'jihowlgh1220@gmail.com',
   phone: '+82 10-2987-9851',
