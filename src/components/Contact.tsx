@@ -21,24 +21,6 @@ export default function Contact() {
       position: 'relative',
       overflow: 'hidden',
     }}>
-      {/* 배경 대형 텍스트 */}
-      <div style={{
-        position: 'absolute',
-        right: '-2%',
-        bottom: '-5%',
-        fontFamily: 'var(--font-display)',
-        fontSize: 'clamp(8rem, 25vw, 18rem)',
-        fontWeight: 900,
-        letterSpacing: '-0.06em',
-        lineHeight: 1,
-        color: 'transparent',
-        WebkitTextStroke: '1px rgba(255,255,255,0.05)',
-        pointerEvents: 'none',
-        userSelect: 'none',
-        textTransform: 'uppercase',
-      }} aria-hidden>
-        CONTACT
-      </div>
 
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: 'clamp(3rem, 6vw, 5rem)' }}>
