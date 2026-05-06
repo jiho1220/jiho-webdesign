@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: 'Park Jiho Portfolio',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://parkjiho-portfolio.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Park Jiho | UX/UI Designer',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Park Jiho | UX/UI Designer',
     description: '박지호 UX/UI 디자이너 포트폴리오',
-    images: ['/og-image.png'],
+    images: ['https://parkjiho-portfolio.vercel.app/og-image.png'],
   },
 }
 
