@@ -85,7 +85,7 @@ export default function About() {
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 28 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
               <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{e.institution}</p>
-              <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 15, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0, whiteSpace: 'pre-line' }}>{e.major}</p>
+              <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 16, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0, whiteSpace: 'pre-line' }}>{e.major}</p>
               {i === 0 && (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                   {GPA.map((g) => (
@@ -116,7 +116,7 @@ export default function About() {
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{a.period}</p>
               <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 2 }}>{a.title}</p>
-              {a.role && <p style={{ fontSize: 14, color: 'var(--accent)', marginBottom: 6 }}>{a.role}</p>}
+              {a.role && <p style={{ fontSize: 15, color: 'var(--accent)', marginBottom: 6 }}>{a.role}</p>}
               {a.organizer && <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{a.organizer}</p>}
             </div>
           ))}
