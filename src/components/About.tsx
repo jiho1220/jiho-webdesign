@@ -80,7 +80,7 @@ export default function About() {
 
         {/* 왼쪽: 학력 → 자격증 */}
         <div>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 18, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>학력</p>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>학력</p>
           {EDUCATION.map((e, i) => (
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 28 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
@@ -99,7 +99,7 @@ export default function About() {
             </div>
           ))}
 
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 18, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>자격증</p>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>자격증</p>
           {CERTIFICATIONS.map((c, i) => (
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{c.date}</p>
@@ -111,7 +111,7 @@ export default function About() {
 
         {/* 오른쪽: 대외활동 → 수상경력 */}
         <div>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 18, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>대외활동</p>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>대외활동</p>
           {ACTIVITIES.map((a, i) => (
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{a.period}</p>
@@ -121,7 +121,7 @@ export default function About() {
             </div>
           ))}
 
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 18, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>수상경력</p>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>수상경력</p>
           {AWARDS.map((a, i) => (
             <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8 }}>{a.date}</p>
