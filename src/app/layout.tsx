@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jiho Park | Web Designer',
     description: '박지호 웹 디자이너 포트폴리오',
-    url: 'https://parkjiho-portfolio.vercel.app',
+    url: 'https://jihopark-webdesign.vercel.app',
     siteName: 'Jiho Park Portfolio',
     images: [
       {
-        url: 'https://parkjiho-portfolio.vercel.app/og-image.png',
+        url: 'https://jihopark-webdesign.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Jiho Park | Web Designer',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Jiho Park | Web Designer',
     description: '박지호 웹 디자이너 포트폴리오',
-    images: ['https://parkjiho-portfolio.vercel.app/og-image.png'],
+    images: ['https://jihopark-webdesign.vercel.app/og-image.png'],
   },
 }
 
