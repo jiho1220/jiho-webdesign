@@ -65,7 +65,6 @@ const row2: SkillGroup[] = [
   },
 ]
 
-const expertise = ['Web Design', 'Brand Identity', 'UI Design', 'Interaction Design', 'UX Research', 'Usability Test']
 
 const WHITE_BOX = ['chatgpt', 'gemini', 'midjourney', 'cursor', 'notion']
 const GRAY_BOX = ['kling']
@@ -169,17 +168,6 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* Expertise 태그 */}
-      <div>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: 16 }}>
-          Expertise
-        </p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-          {expertise.map(item => (
-            <span key={item} className="tag">{item}</span>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }
