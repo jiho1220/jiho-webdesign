@@ -80,58 +80,66 @@ export default function About() {
 
         {/* 왼쪽: 학력 → 자격증 */}
         <div>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>학력</p>
-          {EDUCATION.map((e, i) => (
-            <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 28 }}>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
-              <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{e.institution}</p>
-              <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 16, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0, whiteSpace: 'pre-line' }}>{e.major}</p>
-              {i === 0 && (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-                  {GPA.map((g) => (
-                    <div key={g.label} style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)', flexShrink: 0 }}>{g.label}</span>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: 14, color: 'var(--accent)' }}>{g.gpa}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+          <div className="bg-block" data-order="1">
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>학력</p>
+            {EDUCATION.map((e, i) => (
+              <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 28 }}>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8, letterSpacing: '0.04em' }}>{e.period}</p>
+                <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{e.institution}</p>
+                <p style={{ fontFamily: i === 0 ? undefined : 'var(--font-mono)', fontSize: 16, fontWeight: i === 0 ? 600 : undefined, color: i === 0 ? 'var(--accent)' : 'var(--text-muted)', marginBottom: i === 0 ? 12 : 0, whiteSpace: 'pre-line' }}>{e.major}</p>
+                {i === 0 && (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                    {GPA.map((g) => (
+                      <div key={g.label} style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
+                        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)', flexShrink: 0 }}>{g.label}</span>
+                        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 14, color: 'var(--accent)' }}>{g.gpa}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
 
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>자격증</p>
-          {CERTIFICATIONS.map((c, i) => (
-            <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{c.date}</p>
-              <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{c.name}</p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{c.issuer}</p>
-            </div>
-          ))}
+          <div className="bg-block" data-order="3" style={{ marginTop: 40 }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>자격증</p>
+            {CERTIFICATIONS.map((c, i) => (
+              <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{c.date}</p>
+                <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{c.name}</p>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{c.issuer}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* 오른쪽: 대외활동 → 수상경력 */}
         <div>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>대외활동</p>
-          {ACTIVITIES.map((a, i) => (
-            <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{a.period}</p>
-              <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 2 }}>{a.title}</p>
-              {a.role && <p style={{ fontSize: 15, color: 'var(--accent)', marginBottom: 6 }}>{a.role}</p>}
-              {a.organizer && <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{a.organizer}</p>}
-            </div>
-          ))}
+          <div className="bg-block" data-order="2">
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>대외활동</p>
+            {ACTIVITIES.map((a, i) => (
+              <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 6 }}>{a.period}</p>
+                <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 2 }}>{a.title}</p>
+                {a.role && <p style={{ fontSize: 15, color: 'var(--accent)', marginBottom: 6 }}>{a.role}</p>}
+                {a.organizer && <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{a.organizer}</p>}
+              </div>
+            ))}
+          </div>
 
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', margin: '40px 0 28px' }}>수상경력</p>
-          {AWARDS.map((a, i) => (
-            <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8 }}>{a.date}</p>
-              <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{a.event}</p>
-              <p style={{ marginBottom: 6 }}>
-                <span style={{ background: 'var(--accent)', color: '#000', fontWeight: 700, fontSize: 18, padding: '0 0.3em' }}>{a.award}</span>
-              </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{a.issuer}</p>
-            </div>
-          ))}
+          <div className="bg-block" data-order="4" style={{ marginTop: 40 }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: 20, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 28 }}>수상경력</p>
+            {AWARDS.map((a, i) => (
+              <div key={i} style={{ paddingLeft: 16, borderLeft: '2px solid var(--accent)', marginBottom: 22 }}>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, color: 'var(--text-muted)', marginBottom: 8 }}>{a.date}</p>
+                <p style={{ fontSize: 18, color: 'var(--text)', fontWeight: 600, marginBottom: 4 }}>{a.event}</p>
+                <p style={{ marginBottom: 6 }}>
+                  <span style={{ background: 'var(--accent)', color: '#000', fontWeight: 700, fontSize: 18, padding: '0 0.3em' }}>{a.award}</span>
+                </p>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 15, color: 'var(--text-muted)' }}>{a.issuer}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

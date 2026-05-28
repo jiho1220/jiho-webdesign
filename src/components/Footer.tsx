@@ -10,7 +10,7 @@ export default function Footer() {
         overflow: 'hidden',
         position: 'relative',
       }}>
-        <p style={{
+        <p className="footer-title" style={{
           fontFamily: 'var(--font-display)',
           fontSize: 'clamp(1.75rem, 6.25vw, 5.5rem)',
           fontWeight: 900,
@@ -24,7 +24,7 @@ export default function Footer() {
         }}>
           Thank You<br />For Watching
         </p>
-        <p style={{
+        <p className="footer-sub" style={{
           fontFamily: 'var(--font-sans)',
           fontSize: 'clamp(1rem, 1.8vw, 1.35rem)',
           color: '#ffffff',

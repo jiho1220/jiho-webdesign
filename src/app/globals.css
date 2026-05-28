@@ -159,6 +159,15 @@ a, button { cursor: none; color: inherit; text-decoration: none; }
   background: var(--accent-dim);
 }
 
+/* ── Skill cards ── */
+.skill-item {
+  border: 1px solid var(--border);
+  transition: border-color .2s;
+}
+.skill-item:hover {
+  border-color: var(--accent);
+}
+
 /* ── Project cards ── */
 /* ── Project 2-col grid ── */
 .proj-grid-2 {
