@@ -1,8 +1,8 @@
 export const PERSONAL = {
   name: '박지호',
   nameEn: 'Jiho Park',
-  title: 'UX/UI Designer',
-  email: 'jihowlgh1220@gmail.com',
+  title: 'Web Designer',
+  email: 'jihowlgh00@naver.com',
   phone: '+82 10-2987-9851',
   location: '경기도 수원시 권선구',
   birth: '2000. 12. 20',
@@ -35,7 +35,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: '01',
     title: '헤이브로 Heybro\n타겟 확장을 위한 올인원 자기관리 루틴앱 서비스 제안',
-    category: 'UX/UI Design',
+    category: 'Product Design',
     year: '2025',
     thumbnail: '/projects/01/thumb.png',
     description: '팀 프로젝트',
@@ -66,7 +66,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: '02',
     title: '웰룬 Wellune\n기기 구매 전환 및 리텐션 강화를 위한 데일리 수면 코칭 앱 서비스 제안',
-    category: 'UX/UI Design',
+    category: 'Product Design',
     year: '2025',
     thumbnail: '/projects/02/thumb.png',
     description: '개인 프로젝트',
@@ -91,7 +91,7 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: '03',
     title: '프릿지 Fridge\n단순 커머스에서 \'참여형 ESG 생태계\'로의 확장을 위한 UX/UI 고도화 제안',
-    category: 'UX/UI Design',
+    category: 'Product Design',
     year: '2025',
     thumbnail: '/projects/03/thumb3.png',
     description: '팀 프로젝트',
@@ -143,8 +143,8 @@ export const GPA = [
 ]
 
 export const ACTIVITIES = [
-  { period: '2025.10.20 — 2025.12.01', title: '신한 커리어업 10기', role: 'UXUI 디자인', organizer: '신한은행 · 신한금융희망재단', type: '대외활동' },
-  { period: '2025.07.28 — 2025.09.05', title: '신한 스퀘어브릿지 청년 해커톤 1기', role: 'UXUI 디자인', organizer: '신한금융희망재단', type: '대외활동' },
+  { period: '2025.10.20 — 2025.12.01', title: '신한 커리어업 10기', role: '디자이너', organizer: '신한은행 · 신한금융희망재단', type: '대외활동' },
+  { period: '2025.07.28 — 2025.09.05', title: '신한 스퀘어브릿지 청년 해커톤 1기', role: '디자이너', organizer: '신한금융희망재단', type: '대외활동' },
 ]
 
 export const AWARDS = [

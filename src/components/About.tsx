@@ -31,16 +31,16 @@ export default function About() {
             />
           </div>
 
-          <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.2 }}>
-            사용자의 <span style={{ color: 'magenta' }}>심리를 분석</span>하여<br />
-            <span style={{ color: 'magenta' }}>행동을 설계</span>하는<br />
-            UX/UI 디자이너 <span style={{ background: 'var(--accent)', color: '#000', padding: '0 0.2em' }}>박지호</span>입니다.
+          <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.3 }}>
+            <span style={{ color: 'magenta' }}>디테일과 논리</span>를 바탕으로<br />
+            브랜드의 <span style={{ color: 'magenta' }}>매력적인 시각 경험</span>을 완성하는<br />
+            웹 디자이너 <span style={{ background: 'var(--accent)', color: '#000', padding: '0 0.2em' }}>박지호</span>입니다.
           </p>
 
           <p style={{ fontSize: 17, lineHeight: 1.85, color: 'var(--text-muted)', maxWidth: 600 }}>
-            사용자의 심리와 행동 패턴을 분석해 목적에 맞는 경험을 설계합니다.<br />
-            직관적인 흐름과 시각적 설득력으로, 타겟이 원하는 행동을<br />
-            자연스럽게 이끌어냅니다.
+            디테일과 논리를 기반으로 브랜드가 전달하고자 하는 메시지를<br />
+            시각적으로 구체화합니다. 사용자가 브랜드를 처음 마주하는 순간부터<br />
+            매력을 느낄 수 있도록, 정교한 디자인으로 시각 경험을 완성합니다.
           </p>
         </div>
 

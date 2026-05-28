@@ -22,11 +22,11 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Jiho Park | UX/UI Designer',
-  description: '박지호 UX/UI 디자이너 포트폴리오',
+  title: 'Jiho Park | Web Designer',
+  description: '박지호 웹 디자이너 포트폴리오',
   openGraph: {
-    title: 'Jiho Park | UX/UI Designer',
-    description: '박지호 UX/UI 디자이너 포트폴리오',
+    title: 'Jiho Park | Web Designer',
+    description: '박지호 웹 디자이너 포트폴리오',
     url: 'https://parkjiho-portfolio.vercel.app',
     siteName: 'Jiho Park Portfolio',
     images: [
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         url: 'https://parkjiho-portfolio.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Jiho Park | UX/UI Designer',
+        alt: 'Jiho Park | Web Designer',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jiho Park | UX/UI Designer',
-    description: '박지호 UX/UI 디자이너 포트폴리오',
+    title: 'Jiho Park | Web Designer',
+    description: '박지호 웹 디자이너 포트폴리오',
     images: ['https://parkjiho-portfolio.vercel.app/og-image.png'],
   },
 }
