@@ -68,7 +68,7 @@ export default function Hero() {
             textTransform: 'uppercase',
             color: 'var(--accent)',
           }}>
-            UX/UI Portfolio
+            Portfolio
           </span>
           <span style={{ width: 40, height: 1, background: 'var(--border-strong)', display: 'block' }} />
           <span style={{
