@@ -33,8 +33,8 @@ export default function About() {
 
           <p style={{ fontSize: 'clamp(1.5rem, 3vw, 2.1rem)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.3 }}>
             안녕하세요.<br />
-            <span style={{ color: 'magenta' }}>논리와 디테일</span>을 바탕으로<br />
-            브랜드의 매력을 <span style={{ color: 'magenta' }}>클릭과 전환</span>으로 잇는<br />
+            <span style={{ color: 'magenta' }}>디테일과 논리를</span> 바탕으로<br />
+            브랜드의 매력을 <span style={{ color: 'magenta' }}>클릭과 전환으로 잇는</span><br />
             웹 디자이너 <span style={{ background: 'var(--accent)', color: '#000', padding: '0 0.2em' }}>박지호</span>입니다.
           </p>
 
