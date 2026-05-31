@@ -143,15 +143,15 @@ export const GPA = [
 ]
 
 export const ACTIVITIES = [
-  { period: '2025.10.20 — 2025.12.01', title: '신한 커리어업 10기', role: '디자이너', organizer: '신한은행 · 신한금융희망재단', type: '대외활동' },
-  { period: '2025.07.28 — 2025.09.05', title: '신한 스퀘어브릿지 청년 해커톤 1기', role: '디자이너', organizer: '신한금융희망재단', type: '대외활동' },
+  { period: '2025.10.20 — 2025.12.01', title: '신한 커리어업 10기', role: 'UX/UI 디자이너', organizer: '신한은행 · 신한금융희망재단', type: '대외활동' },
+  { period: '2025.07.28 — 2025.09.05', title: '신한 스퀘어브릿지 청년 해커톤 1기', role: 'UX/UI 디자이너', organizer: '신한금융희망재단', type: '대외활동' },
 ]
 
 export const AWARDS = [
   {
     date: '2025.12.01',
     event: '신한 커리어업 10기',
-    award: 'UXUI 디자인 최우수상(파트)',
+    award: 'UX/UI 디자인 최우수상(파트)',
     issuer: '신한은행',
   },
   {
