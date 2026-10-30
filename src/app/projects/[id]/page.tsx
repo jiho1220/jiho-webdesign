@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { PROJECTS } from '@/lib/constants'
 
+
 export function generateStaticParams() {
   return PROJECTS.map((p) => ({ id: p.id }))
 }
@@ -69,19 +70,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             )}
           </div>
 
-          {/* 메타 */}
-          {project.meta && project.meta.length > 0 && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 24, minWidth: 220 }}>
-              {project.meta.map((m) => (
-                <div key={m.label}>
-                  <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: 6 }}>
-                    {m.label}
-                  </p>
-                  <p style={{ fontFamily: 'var(--font-mono)', fontSize: 16, letterSpacing: '0', color: 'var(--text-muted)' }}>{m.value}</p>
+          {/* 메타 + 툴 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 24, minWidth: 220 }}>
+            {project.meta && project.meta.map((m) => (
+              <div key={m.label}>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: 6 }}>
+                  {m.label}
+                </p>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 16, letterSpacing: '0', color: 'var(--text-muted)' }}>{m.value}</p>
+              </div>
+            ))}
+            {project.tools && project.tools.length > 0 && (
+              <div>
+                <p style={{ fontFamily: 'var(--font-mono)', fontSize: 13, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-faint)', marginBottom: 10 }}>
+                  Tools
+                </p>
+                <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  {project.tools.map((tool) => (
+                    <Image key={tool.name} src={tool.logo} alt={tool.name} width={32} height={32} title={tool.name} style={{ objectFit: 'contain' }} />
+                  ))}
                 </div>
-              ))}
-            </div>
-          )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

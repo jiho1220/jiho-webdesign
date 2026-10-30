@@ -29,6 +29,8 @@ export type ProjectItem = {
   videoTitle?: string
   /** 영상 섹션 설명 */
   videoDescription?: string
+  /** 사용 툴 로고 ({ name, logo: public 기준 경로 }) */
+  tools?: { name: string; logo: string }[]
 }
 
 export const PROJECTS: ProjectItem[] = [
@@ -39,6 +41,10 @@ export const PROJECTS: ProjectItem[] = [
     year: '2025',
     thumbnail: '/projects/03/thumb_cover.png',
     description: '팀 프로젝트',
+    tools: [
+      { name: 'Figma', logo: '/logos/figma.png' },
+      { name: 'Adobe Illustrator', logo: '/logos/illustrator.png' },
+    ],
     overview: 'ESG 실천을 막는 선택·비용·지식 3가지 허들을 파악하고,\n일상과 ESG를 연결하는 콘텐츠와 효용감 기반 퍼널을 설계해\n단순 쇼핑몰을 능동적 실천의 플랫폼으로 전환했습니다.',
     meta: [
       { label: 'Role', value: 'UX/UI Designer' },
@@ -63,6 +69,10 @@ export const PROJECTS: ProjectItem[] = [
     year: '2025',
     thumbnail: '/projects/02/thumb_cover.png',
     description: '개인 프로젝트',
+    tools: [
+      { name: 'Figma', logo: '/logos/figma.png' },
+      { name: 'Adobe Photoshop', logo: '/logos/photoshop.png' },
+    ],
     overview: '수면 앱의 데이터는 충분했지만, 유저의 행동은 바뀌지 않았습니다.\n문제는 기록과 실천 사이의 단절이었습니다.\n체크인/체크아웃 루프를 통해 객관적 수면 데이터와 유저의 주관적 컨디션 기록을 하나의 흐름으로 연결하고,\n매일 반복하고 싶은 수면 관리 리추얼을 설계했습니다.',
     meta: [
       { label: 'Role', value: 'UX/UI Designer' },
@@ -88,6 +98,15 @@ export const PROJECTS: ProjectItem[] = [
     year: '2025',
     thumbnail: '/projects/01/thumb_cover.png',
     description: '팀 프로젝트',
+    tools: [
+      { name: 'Figma', logo: '/logos/figma.png' },
+      { name: 'Adobe Photoshop', logo: '/logos/photoshop.png' },
+      { name: 'Adobe Illustrator', logo: '/logos/illustrator.png' },
+      { name: 'Midjourney', logo: '/logos/midjourney.png' },
+      { name: 'Kling AI', logo: '/logos/kling.png' },
+      { name: 'ChatGPT', logo: '/logos/chatgpt.png' },
+      { name: 'Gemini', logo: '/logos/gemini.png' },
+    ],
     overview: '스킨케어 브랜드 헤이브로의 타겟 확장을 위해 제안한 남성 올인원 자기관리 루틴 앱으로,\n사용자 경험 중심의 논리적인 서비스 설계와 프로토타이핑을 주도하여\n신한 스퀘어브릿지 청년 해커톤 1기에서 디자인 부문 우승을 차지하여 디자인 혁신상(대상)을 수상했습니다.',
     meta: [
       { label: 'Role', value: 'UX/UI Designer' },

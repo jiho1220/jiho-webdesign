@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { PROJECTS } from '@/lib/constants'
 import ProjectRowThumb from '@/components/ProjectRowThumb'
 
@@ -65,6 +66,13 @@ export default function Projects() {
                   </span>
                 ))}
               </h3>
+              {p.tools && p.tools.length > 0 && (
+                <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
+                  {p.tools.map((tool) => (
+                    <Image key={tool.name} src={tool.logo} alt={tool.name} width={24} height={24} title={tool.name} style={{ objectFit: 'contain' }} />
+                  ))}
+                </div>
+              )}
             </div>
           </Link>
         ))}
